@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Mike Petersen "mike@odania-it.de"
+MAINTAINER Mike Petersen <mike@odania-it.de>
 
 # Set correct environment variables.
 ENV HOME /root
