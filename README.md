@@ -5,7 +5,7 @@ Simple mailcatcher for docker. I use it for development purposes together with f
 Example fig.yml:
 ```
 mailcatcher:
-  build: odaniait/mailcatcher-docker:latest
+  image: odaniait/mailcatcher-docker:latest
   ports:
     - "2525:2525"
     - "1080:1080"
