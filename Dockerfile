@@ -1,11 +1,8 @@
-FROM ubuntu:14.04
+FROM odaniait/docker-base:latest
 MAINTAINER Mike Petersen <mike@odania-it.de>
 
-# Set correct environment variables.
-ENV HOME /root
-
 RUN apt-get update
-RUN apt-get install -y ruby-dev rubygems-integration supervisor sqlite3 libsqlite3-dev build-essential
+RUN apt-get install -y sqlite3 libsqlite3-dev
 
 RUN gem install mailcatcher --no-ri --no-rdoc
 
