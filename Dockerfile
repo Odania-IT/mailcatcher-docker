@@ -6,7 +6,7 @@ RUN apt-get install -y sqlite3 libsqlite3-dev
 
 RUN gem install mailcatcher --no-ri --no-rdoc
 
-# setup varnish service
+# setup mailcatcher service
 RUN mkdir -p /etc/service/mailcatcher
 COPY runit/mailcatcher.sh /etc/service/mailcatcher/run
 
